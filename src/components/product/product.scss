@@ -1,0 +1,166 @@
+.products__item {
+    font-family: 'Trebuchet MS', sans-serif;
+    font-style: normal;
+    min-width: 320px;    
+    margin-right: 80px;
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+}
+.product__wrapper {
+    width: 100%;
+    min-height: 480px;
+    box-sizing: border-box; 
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    padding: 21px 48px 0;
+    margin-bottom: 14px;
+    overflow: hidden;
+    z-index: 2;
+    
+    &:before {
+        content: '';
+        position: absolute;
+        top: 4px;
+        left: 4px;
+        bottom: 4px;
+        right: 4px;
+        background: linear-gradient(135deg, transparent 32px, #fff 0);
+        z-index: -1;
+        border-radius: 12px;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: linear-gradient(135deg, transparent 33px, #1698D9 0);
+        z-index: -2;
+        border-radius: 12px;
+    }    
+    .product__subtitle {        
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 19px;
+        color: #666666;
+        margin-bottom: 5px;
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }    
+    .product__title {       
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        color: #000000;
+        margin-bottom: 15px;             
+        &::first-letter {
+            text-transform: uppercase;
+        }
+    }
+    .product__type {        
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 28px;
+        display: block;
+    }
+    .product__details {        
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 16px;        
+        color: #666666;
+        margin-bottom: 33px;
+    }
+    .product__img {        
+        img {                   
+            width: 97%;  
+            position: absolute;
+            left: 4px;
+            bottom: 4px;
+            border-radius: 12px; 
+        }
+    }
+    .product__weight {
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: #1698D9;
+        bottom: 16px;
+        right: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #fff;
+        line-height: 0.9;
+        .number {
+            font-weight: 400;
+            font-size: 42px;            
+        }   
+        .unit {
+            font-size: 21px;            
+        }  
+    }
+}
+.product__wrapper_disabled {
+    pointer-events: none;
+    &:after {            
+        background: linear-gradient(135deg, transparent 33px, #B3B3B3 0);            
+    }  
+    .product__subtitle, .product__title, .product__details  {
+        color: rgba(179,179,179,0.5);
+        mix-blend-mode: normal;            
+    }
+    .product__img {
+        img {
+            opacity: 0.5;
+        }
+    }
+    .product__weight {        
+        background-color: #B3B3B3;        
+    }
+}
+.product__wrapper_selected {    
+    &:after {            
+        background: linear-gradient(135deg, transparent 33px, #D91667 0);            
+    }  
+    .product__weight {
+        background-color: #D91667;
+    }    
+}
+.product__wrapper_selected-hover {
+    .product__subtitle {
+        color: #E62E7A;
+    }
+}
+.product__description {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;    
+    text-align: center;
+    color: #FFFFFF;
+    .product__button {
+        color: #22A7E9;
+        text-decoration: none;
+        border-bottom: 1px dashed #22A7E9;
+    }
+    &_disabled {
+        color: #FFFF66;
+    }
+}
+
+@media (max-width: 1120px) {
+    .App {
+        display: block;
+    }
+    .products__item {        
+        margin: 0 20px 30px;
+        &:nth-child(3n) {
+            margin-right: 20px;
+        }
+    }
+}

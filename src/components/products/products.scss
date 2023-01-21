@@ -1,0 +1,18 @@
+.products {
+    max-width: 1120px;    
+    .products__title {
+        margin: 0 0 24px 0;
+        color: #fff;
+        font-family: 'Exo2.0-Thin';
+        font-weight: 100;
+        font-size: 36px;
+        line-height: 44px;
+        text-align: center;
+        text-shadow: 0px 1px 1px #000000;
+    }
+    .products__list {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;        
+    }
+}

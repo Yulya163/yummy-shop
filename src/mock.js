@@ -1,0 +1,43 @@
+const products = [
+    {
+        id: 1,
+        subtitle: 'сказочное заморское яство',
+        title: 'нямушка',
+        type: 'c фуа-гра',
+        portion_number: 10,
+        present: 'мышь в подарок',
+        img: './img/Photo.jpg',
+        bundle_weight: '0,5', 
+        satisfaction: false,
+        availability: true, 
+        description: 'Печень утки разварная с артишоками.',    
+    },
+    {
+        id: 2,
+        subtitle: 'сказочное заморское яство',
+        title: 'нямушка',
+        type: 'c рыбой',
+        portion_number: 40,
+        present: '2 мыши в подарок',
+        img: './img/Photo.jpg',
+        bundle_weight: '2',
+        satisfaction: false,
+        availability: true,         
+        description: 'Головы щучьи с чесноком да свежайшая сёмгушка.',    
+    },
+    {
+        id: 3,
+        subtitle: 'сказочное заморское яство',
+        title: 'нямушка',
+        type: 'c курой',
+        portion_number: 100,
+        present: '5 мышей в подарок',
+        img: './img/Photo.jpg',
+        bundle_weight: '5',    
+        satisfaction: true, 
+        availability: false,    
+        description: 'Филе из цыплят с трюфелями в бульоне.',    
+    },
+];
+
+export {products};
