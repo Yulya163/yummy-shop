@@ -1,3 +1,5 @@
+#[DEMO](https://yulya163.github.io/yummy-shop/)
+
 # Практическое задание 
 ## Скачать тестовое задание целиком можно [здесь](https://dl.funbox.ru/qt-html-css-js.zip).
 
