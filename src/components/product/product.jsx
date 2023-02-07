@@ -41,11 +41,11 @@ export default function Product({product}) {
         switch (status) {
             case ProductStatus.DEFAULT :
                 return <>Чего сидишь? Порадуй котэ,  
-                    <a href='/' 
+                    <button
                         className='product__button'
                         onClick={handleProductItemClick}                        
                     > купи.
-                    </a> 
+                    </button> 
                 </>;
             case ProductStatus.SELECTED :
                 return `${description}`;            

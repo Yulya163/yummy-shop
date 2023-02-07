@@ -146,7 +146,20 @@
     .product__button {
         color: #22A7E9;
         text-decoration: none;
-        border-bottom: 1px dashed #22A7E9;
+        // border-bottom: 1px dashed #22A7E9;
+        background: none;
+        padding: 0;
+        margin: 2px;
+        &::after {
+            content: '';
+            width: 95%;
+            height: 1px;
+            margin: 0;
+            background-image: linear-gradient(to left, transparent 40%, #22A7E9 40%);
+            background-size: 5px 1px;
+            background-repeat: repeat-x;
+            display: block;
+        }
     }
     &_disabled {
         color: #FFFF66;
