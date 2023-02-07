@@ -32,9 +32,17 @@ a {
   justify-content: center;
   align-items: center;  
   padding: 36px 0;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%), url('./img/Pattern.jpg');
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%), url('./img/Pattern.jpg');
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat; 
   box-sizing: border-box;
+  @media
+  (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx) {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 5e-05) 49.88%, rgba(0, 0, 0, 0.5) 100%), url('./img/Pattern@2x.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat; 
+  }
 }
