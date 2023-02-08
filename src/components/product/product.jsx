@@ -77,7 +77,7 @@ export default function Product({product}) {
     
     return (
         <div className='products__item'>   
-            <a href='/' 
+            <div
                 className={`product__wrapper ${setProductsItemClassName(productStatus)}`}
                 disabled={!availability}
                 onClick={handleProductItemClick}                
@@ -100,7 +100,7 @@ export default function Product({product}) {
                     <div className='number'>{bundle_weight}</div>
                     <div className='unit'>кг</div>
                 </div>
-            </a>         
+            </div>         
             <div className={availability ? 'product__description' : 'product__description product__description_disabled'}> 
                 {setDescription(productStatus)}                            
             </div>
