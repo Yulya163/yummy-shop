@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/yummy-shop/static/css/main.9d0d6007.css",
-    "main.js": "/yummy-shop/static/js/main.0bde574a.js",
+    "main.css": "/yummy-shop/static/css/main.3ee25162.css",
+    "main.js": "/yummy-shop/static/js/main.b698a226.js",
     "static/js/787.cb64702b.chunk.js": "/yummy-shop/static/js/787.cb64702b.chunk.js",
     "static/media/Pattern@2x.jpg": "/yummy-shop/static/media/Pattern@2x.84cd3cdf05e33703ddc9.jpg",
     "static/media/Pattern.jpg": "/yummy-shop/static/media/Pattern.7a351f7a438cc450194b.jpg",
     "static/media/Exo2.0-Thin.otf": "/yummy-shop/static/media/Exo2.0-Thin.51c257bfa8ec3e0cfb4b.otf",
     "index.html": "/yummy-shop/index.html",
-    "main.9d0d6007.css.map": "/yummy-shop/static/css/main.9d0d6007.css.map",
-    "main.0bde574a.js.map": "/yummy-shop/static/js/main.0bde574a.js.map",
+    "main.3ee25162.css.map": "/yummy-shop/static/css/main.3ee25162.css.map",
+    "main.b698a226.js.map": "/yummy-shop/static/js/main.b698a226.js.map",
     "787.cb64702b.chunk.js.map": "/yummy-shop/static/js/787.cb64702b.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d0d6007.css",
-    "static/js/main.0bde574a.js"
+    "static/css/main.3ee25162.css",
+    "static/js/main.b698a226.js"
   ]
 }
